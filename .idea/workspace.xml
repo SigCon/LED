@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb5c81eb-abc8-42bc-9508-075e3a64b5ce" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="LED.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,7 +30,7 @@
       <file leaf-file-name="led.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/led.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.43539" vertical-offset="0" max-vertical-offset="1802">
+            <state vertical-scroll-proportion="0.41559952" vertical-offset="17" max-vertical-offset="1802">
               <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -468,7 +468,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/led.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43539" vertical-offset="0" max-vertical-offset="1802">
+        <state vertical-scroll-proportion="0.41559952" vertical-offset="17" max-vertical-offset="1802">
           <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
