@@ -24,7 +24,7 @@ def printdate(repetition):
     of repetitions for the '---' string as the only parameter'''
     now = datetime.now()
     print '%s-%s-%s %s:%s:%s' % (now.day, now.month, now.year, now.hour, now.minute, now.second)
-    printline(8)
+    printline(repetition)
 
 def printscore():
     print ""
@@ -53,6 +53,7 @@ GPIO.setup(leftButton, GPIO.IN)
 leftPlayerName = raw_input("What is the left player's name? ")
 rightPlayerName = raw_input("What is the right player's name? ")
 games = int(raw_input("How many games do you want to play? "))
+printline(10)
 
 # Put the names in a list
 names = [leftPlayerName, rightPlayerName]
@@ -61,6 +62,8 @@ names = [leftPlayerName, rightPlayerName]
 # Play all the games
 for game in range(0, games):
     # Turn the LED on
+    printline(6)
+    print 'Game ' + str(game +1) + ' out of ' + str(games)
     GPIO.output(led, 1)
 
     # Generate a random time the led will be on
