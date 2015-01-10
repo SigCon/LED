@@ -29,7 +29,7 @@ def printscore():
     print "Scores:"
     print "  " + names[0] + ": " + str(scores[0])
     print "  " + names[1] + ": " + str(scores[1])
-    print listoftimes
+    print "The following times were used: " + listoftimes
 
 print printdate(10)
 
