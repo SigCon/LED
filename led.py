@@ -14,14 +14,17 @@ def wingame(player):
     print names[player] + ' won!'
     scores[player] += 1
 
+def printline(repetition):
+    output = '---' * repetition
+    print output
+
 # Print date and time
 def printdate(repetition):
     '''The function printdate accepts the number
     of repetitions for the '---' string as the only parameter'''
     now = datetime.now()
     print '%s-%s-%s %s:%s:%s' % (now.day, now.month, now.year, now.hour, now.minute, now.second)
-    output = '---' * repetition
-    return output
+    printline(8)
 
 def printscore():
     print ""
@@ -29,9 +32,9 @@ def printscore():
     print "Scores:"
     print "  " + names[0] + ": " + str(scores[0])
     print "  " + names[1] + ": " + str(scores[1])
-    print "The following times were used:" + listoftimes
+    print "The LED went out after the following times in seconds: " + str(listoftimes)
 
-print printdate(10)
+print printdate(6)
 
 # Make sure the GPIO pins are ready
 GPIO.setmode(GPIO.BOARD)
@@ -61,13 +64,13 @@ for game in range(0, games):
     GPIO.output(led, 1)
 
     # Generate a random time the led will be on
-    randnumber = int(random.uniform(1, 10))
-    # randnumber = random.uniform(1, 10)
+    randnumber = int(random.uniform(1, 5))
+    # randnumber = random.uniform(1, 5)
     listoftimes.append(randnumber)
-    print randnumber
+    # print randnumber
     print ''
 
-    # Wait for a random length of time, between 1 and 10 seconds
+    # Wait for a random length of time, between 1 and 5 seconds
     time.sleep(randnumber)
 
     '''One odd thing is that the buttons are on if they are not pressed and off when they are. This is why
