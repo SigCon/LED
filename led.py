@@ -47,12 +47,12 @@ GPIO.setup(rightButton, GPIO.IN)
 GPIO.setup(leftButton, GPIO.IN)
 
 # Find out the names of the players
-leftName = raw_input("What is the left player's name? ")
-rightName = raw_input("What is the right player's name? ")
+leftPlayerName = raw_input("What is the left player's name? ")
+rightPlayerName = raw_input("What is the right player's name? ")
 games = int(raw_input("How many games do you want to play? "))
 
 # Put the names in a list
-names = [leftName, rightName]
+names = [leftPlayerName, rightPlayerName]
 
 
 # Play all the games
